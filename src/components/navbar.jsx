@@ -1,30 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 
-function Navbar() {
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="flex items-center justify-between px-8 py-4 bg-gray-900 text-white shadow-md">
-      {/* Logo */}
-      <div className="text-2xl font-bold tracking-wide">
-        iPROSPECT
+    <nav className="bg-gray-900 text-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16 items-center">
+          {/* Logo */}
+          <div className="flex-shrink-0 text-2xl font-bold text-blue-400">
+            BrightLayer
+          </div>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-6">
+            <a href="#" className="hover:text-blue-400 transition">
+              Home
+            </a>
+            <a href="#" className="hover:text-blue-400 transition">
+              About
+            </a>
+            <a href="#" className="hover:text-blue-400 transition">
+              Services
+            </a>
+            <a href="#" className="hover:text-blue-400 transition">
+              Contact
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-2xl focus:outline-none"
+          >
+            {isOpen ? "✖" : "☰"}
+          </button>
+        </div>
       </div>
 
-      {/* Nav Links */}
-      <ul className="hidden md:flex space-x-8 text-lg font-medium">
-        <li className="cursor-pointer hover:text-yellow-400 transition">About</li>
-        <li className="cursor-pointer hover:text-yellow-400 transition">Services</li>
-        <li className="cursor-pointer hover:text-yellow-400 transition">Work</li>
-        <li className="cursor-pointer hover:text-yellow-400 transition">Thoughts & Views</li>
-      </ul>
-
-      {/* Right Side */}
-      <div className="flex items-center space-x-6">
-        <span className="cursor-pointer hover:text-yellow-400">🌐 Global</span>
-        <button className="bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold hover:bg-yellow-500 transition">
-          Get in touch →
-        </button>
-      </div>
+      {/* Mobile Menu Dropdown */}
+      {isOpen && (
+        <div className="md:hidden bg-gray-800 px-4 pb-4 space-y-2">
+          <a href="#" className="block hover:text-blue-400 transition">
+            Home
+          </a>
+          <a href="#" className="block hover:text-blue-400 transition">
+            About
+          </a>
+          <a href="#" className="block hover:text-blue-400 transition">
+            Services
+          </a>
+          <a href="#" className="block hover:text-blue-400 transition">
+            Contact
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
-
-export default Navbar;
