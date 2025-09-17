@@ -1,19 +1,29 @@
 import React from "react";
-import Navbar from "./components/navbar"; 
-import Header  from "./components/header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Header from "./components/header";
 import About from "./components/about";
-import Footer from "./components/footer"; 
+import Footer from "./components/footer";
+import ContactPage from "./components/ContactPage";
+import Work from "./components/Work";
 
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Navbar />
-      <div className="p-6 text-center">
-       <Header/>
-       <About/>
+    <Router>
+      <div className="min-h-screen bg-gray-100">
+        <Navbar />
+        <div className="text-center">
+          <Routes>
+            <Route path="/" element={<Header/>}/>
+            <Route path="/about" element={<About />} />
+            <Route path="/ContactPage" element={<ContactPage/>}/>
+            <Route path="/Work" element={<Work/>}/>
+          </Routes>
+        </div>
+        <Footer />
       </div>
-    </div>
+    </Router>
   );
 }
 
