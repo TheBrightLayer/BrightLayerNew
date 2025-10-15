@@ -7,10 +7,10 @@ const Footer = () => {
     <footer className="bg-black text-gray-400 py-12 px-8">
       <div className="container mx-auto max-w-7xl flex flex-col md:flex-row md:justify-between items-start md:items-center">
         {/* Logo and Copyright */}
-        <div className="flex flex-col mb-8 md:mb-0 md:mr-12">
-          <div className="text-2xl text-white font-bold mb-2">iPROSPECT</div>
-          <div className="text-sm">a dentsu company</div>
-          <div className="text-xs text-gray-500 mt-4">© 2025 iProspect. All rights reserved.</div>
+        <div className="flex flex-col mb-8 md:mb-0 md:mr-12 ">
+          <div className="text-2xl text-white font-bold mb-2">BrightLayer</div>
+          <div className="text-sm">Ambition meeting Accelaration</div>
+          <div className="text-xs text-gray-500 mt-4">© 2025 BrightLayer. All rights reserved.</div>
         </div>
         
         {/* Navigation Links Grid */}
