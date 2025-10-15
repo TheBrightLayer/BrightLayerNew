@@ -11,6 +11,7 @@ import Work from "./components/aboutWork";
 import Services from "./components/services";
 import Insights from "./components/insights";
 import AboutHome from "./components/aboutHome";
+import AboutSection from "./components/AboutSection";
 import Kickstart from "./components/kickstart";
 import Brand from "./components/brand";
 import Footer from "./components/footer";
@@ -78,6 +79,7 @@ function AppContent() {
             element={
               <>
                 <Header />
+                <AboutSection />
                 <AboutHome />
                 <About />
                 <Work />
