@@ -740,7 +740,7 @@ targetTop = rect.top + (window.scrollY || window.pageYOffset || 0) - window.inne
         <div className="relative z-20 w-[95vw] sm:w-[90vw] max-w-[1400px] mx-auto px-4 sm:px-0">
           {/* Hero block: fills first viewport */}
           <div className="min-h-screen flex flex-col items-center justify-center">
-            <h4 className="text-green-500 font-bold uppercase text-xs sm:text-sm tracking-wider text-center">
+            <h4 className="text-green-500 mb-5 font-bold uppercase text-xs sm:text-sm tracking-wider text-center">
               Redefining the future of Brand Growth
             </h4>
 
