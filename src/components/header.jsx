@@ -89,7 +89,7 @@ function Header() {
     [animateDetails]
   );
 
-  var API_BASE = "https://thebrightlayerbackend.onrender.com" || "http://localhost:5000";
+  var API_BASE = "https://thebrightlayerbackend.onrender.com";
   var ENDPOINT = API_BASE + "/api/sendMail/send-proposal";
 
   var handleChange = function (e) {
