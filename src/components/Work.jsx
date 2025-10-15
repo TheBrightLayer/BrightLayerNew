@@ -17,7 +17,7 @@ import SkeletonLoader from "../components/skeletonLoader";
  * - only show error message when there's no data to display
  */
 
-const DEFAULT_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const DEFAULT_BASE = "https://thebrightlayerbackend.onrender.com" || "http://localhost:5000";
 
 // ---------------- helpers ----------------
 const unique = (arr) => Array.from(new Set(arr));
