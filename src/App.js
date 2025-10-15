@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Header from "./components/header";
-import About from "./components/about";
+import About from "./components/About";
 import ServicesPage from "./pages/servicesPage";
 import ServicesGrid from "./components/servicesGrid";
 import AboutPage from "./pages/aboutPage";

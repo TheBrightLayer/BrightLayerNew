@@ -13,7 +13,7 @@ import t8 from "../assets/tanisha.png";
 export default function About() {
   // Add optional `focus` for each image (object-position). Tweak per-photo if needed.
   const teamMembers = [
-    { id: 0, img: t1, name: "Sanjana Kumari", role: "Marketing Lead", tag: "Design", year: "2025", description: "Crafts beautiful campaigns that people love. Transforms briefs into soulful visual systems.", focus: "center 20%" },
+    { id: 0, img: t1, name: "Sanjana Arora", role: "Marketing Lead", tag: "Design", year: "2025", description: "Crafts beautiful campaigns that people love. Transforms briefs into soulful visual systems.", focus: "center 20%" },
     { id: 1, img: t2, name: "Kapisha Gautam", role: "Team Lead", tag: "Marketing", year: "2025", description: "Builds resilient, scalable products. Turns complex problems into elegant code.", focus: "center 24%" },
     { id: 2, img: t3, name: "Sweety Manchandani", role: "Social Media Manager", tag: "Strategy", year: "2025", description: "Finds the north star in noisy markets. Aligns business goals with meaningful work.", focus: "center 22%" },
     { id: 3, img: t4, name: "Ritik Sinha", role: "Project Manager", tag: "Delivery", year: "2025", description: "Keeps teams shipping on time and happy. Turns chaos into predictable delivery.", focus: "center 18%" },
